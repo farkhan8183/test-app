@@ -1,0 +1,75 @@
+.App {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  
+}
+body{
+  background-color: black;
+}
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+.input-area {
+  display: flex;
+  gap: 10px;
+  margin: 30px 0;
+}
+
+input {
+  flex: 1;
+  padding: 12px;
+  font-size: 16px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  padding: 12px 20px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #ff5252;
+}
+
+.recipe-result {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+  white-space: pre-line; /* Preserves line breaks from AI */
+}
+.text{
+    color: blue;
+}
+/* Add these to your existing styles */
+.error {
+  color: #ff4444;
+  margin: 15px 0;
+  padding: 10px;
+  background: #ffeeee;
+  border-radius: 4px;
+}
+
+button:disabled {
+  background: #3d1b1b !important;
+  cursor: not-allowed;
+}
+
+pre {
+  white-space: pre-wrap; /* Preserves formatting but wraps text */
+  font-family: inherit;
+}
+.btn{
+  background-color: white;
+  color:black;
+}
