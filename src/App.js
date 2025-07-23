@@ -17,7 +17,7 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch('https://primary-production-03db.up.railway.app/webhook/e0a66ec3-ad61-4d3a-b6e2-d97f5f48af20', {
+      const response = await fetch('https://primary-production-03db.up.railway.app/webhook/recipe', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ recipeRequest: userInput })
@@ -60,7 +60,7 @@ function App() {
 
       {recipe && (
         <div className="recipe-result">
-          <h2>Your Recipe:</h2>
+          
           <pre>{recipe}</pre> {/* pre preserves formatting */}
         </div>
       )}
